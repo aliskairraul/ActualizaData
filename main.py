@@ -40,7 +40,7 @@ def retorna_data_bitcoin() -> dict:
         data = response.json()
         diccionario = {
             'date': today,
-            'price': data['prices'][0][1],
+            'price': data['prices'][0][1],  # precio promedio ponderado por volumen del día NO ES CLOSE
             'total_volume': data['total_volumes'][0][1],
             'market_cap': data['market_caps'][0][1]
         }
@@ -55,6 +55,8 @@ def retorna_data_bitcoin() -> dict:
 def retorna_data_instrumentos() -> dict:
     try:
         today = datetime.now(ZoneInfo("America/Caracas")).date()
+
+        # 🛑 Si es fin de semana, retornar valores nulos
         if today.weekday() in [5, 6]:
             logger.warning("Fin de semana detectado: retornando valores nulos")
             return {
@@ -65,8 +67,11 @@ def retorna_data_instrumentos() -> dict:
                 'stock_index_ni225': None
             }
 
-        start = today.strftime('%Y-%m-%d')
-        end = (today + timedelta(days=1)).strftime('%Y-%m-%d')
+        # 📅 Fecha objetivo: cierre del día anterior
+        ayer = today - timedelta(days=1)
+        start = ayer.strftime('%Y-%m-%d')
+        end = (ayer + timedelta(days=1)).strftime('%Y-%m-%d')
+
         tickers = {
             'price_gold': 'GC=F',
             'stock_index_dowjones': '^DJI',
@@ -77,15 +82,27 @@ def retorna_data_instrumentos() -> dict:
 
         diccionario = {}
         for instrumento, simbolo in tickers.items():
-            yahoo_response = yf.download(simbolo, start=start, end=end, interval='1d', auto_adjust=True)
-            valor = yahoo_response.iloc[0, 0] if not yahoo_response.empty else None
-            diccionario[instrumento] = valor
-            logger.info(f"{instrumento} obtenido: {valor}")
-            time.sleep(15)
+            try:
+                ticker = yf.Ticker(simbolo)
+                hist = ticker.history(start=start, end=end, interval='1d', auto_adjust=False)
+
+                # if not hist.empty and hist.index[0].date() == today:
+                #     valor = hist['Close'].iloc[0]
+                # else:
+                #     valor = None
+                valor = hist['Close'].iloc[0]
+                diccionario[instrumento] = valor
+                logger.info(f"{instrumento} obtenido: {valor}")
+                time.sleep(15)
+
+            except Exception as e:
+                logger.error(f"Error individual al obtener {instrumento}: {e}")
+                diccionario[instrumento] = None
 
         return diccionario
+
     except Exception as e:
-        logger.error(f"Error al obtener data de instrumentos: {e}")
+        logger.error(f"Error general al obtener data de instrumentos: {e}")
         raise
 
 
