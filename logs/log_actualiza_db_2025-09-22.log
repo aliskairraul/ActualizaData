@@ -1,0 +1,14 @@
+2025-09-22 19:25:02 - INFO - [actualiza_db] - Inicio del pipeline de actualización INTENTO --> 1
+2025-09-22 19:25:03 - INFO - [actualiza_db] - Data existente cargada desde db\db.parquet
+2025-09-22 19:25:03 - INFO - [actualiza_db] - Data Bitcoin obtenida correctamente
+2025-09-22 19:25:12 - INFO - [actualiza_db] - price_gold obtenido: 3778.10009765625
+2025-09-22 19:25:27 - INFO - [actualiza_db] - stock_index_dowjones obtenido: 46381.5390625
+2025-09-22 19:25:43 - INFO - [actualiza_db] - stock_index_sp500 obtenido: 6693.75
+2025-09-22 19:25:58 - INFO - [actualiza_db] - rate_US10Y obtenido: 4.14300012588501
+2025-09-22 19:26:13 - INFO - [actualiza_db] - stock_index_ni225 obtenido: 45493.66015625
+2025-09-22 19:26:28 - INFO - [actualiza_db] - Data combinada: {'date': datetime.date(2025, 9, 22), 'price': 112696.87967018946, 'total_volume': 69222883691.57718, 'market_cap': 2245679522053.126, 'price_gold': np.float64(3778.10009765625), 'stock_index_dowjones': np.float64(46381.5390625), 'stock_index_sp500': np.float64(6693.75), 'rate_US10Y': np.float64(4.14300012588501), 'stock_index_ni225': np.float64(45493.66015625)}
+2025-09-22 19:26:28 - INFO - [actualiza_db] - Data concatenada correctamente
+2025-09-22 19:26:28 - INFO - [actualiza_db] - Aplicando estrategia de forward fill
+2025-09-22 19:26:29 - INFO - [actualiza_db] - Data actualizada correctamente
+2025-09-22 19:26:29 - INFO - [actualiza_db] - Data persistida exitosamente en db\db.parquet
+2025-09-22 19:26:29 - INFO - [actualiza_db] - Pipeline completado exitosamente

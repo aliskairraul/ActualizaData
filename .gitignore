@@ -1,0 +1,11 @@
+# Entorno virtual
+venv/
+
+# Cachés de Python
+**/__pycache__/
+
+# Carpeta de datos en la raíz
+/data/
+
+# Configuración de flake8
+.flake8
