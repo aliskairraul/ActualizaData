@@ -1,0 +1,11 @@
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Inicio del pipeline de actualización INTENTO --> 1
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Data existente cargada desde db/db.parquet
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Data Bitcoin obtenida correctamente
+2025-09-29 02:24:10 - WARNING - [actualiza_db] - Fin de semana detectado: retornando valores nulos
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Data combinada: {'date': datetime.date(2025, 9, 28), 'price': 111881.55033934923, 'total_volume': 34202318134.513817, 'market_cap': 2228340157100.986, 'price_gold': None, 'stock_index_dowjones': None, 'stock_index_sp500': None, 'rate_US10Y': None, 'stock_index_ni225': None}
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Data concatenada correctamente
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Aplicando estrategia de forward fill
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Data actualizada correctamente
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Data persistida exitosamente en db/db.parquet
+2025-09-29 02:24:10 - INFO - [actualiza_db] - Pipeline completado exitosamente
+2025-09-29 02:24:10 - INFO - [actualiza_db] - No se encontraron logs para eliminar
