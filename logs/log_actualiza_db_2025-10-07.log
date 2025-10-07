@@ -1,0 +1,15 @@
+2025-10-07 02:19:22 - INFO - [actualiza_db] - Inicio del pipeline de actualización INTENTO --> 1
+2025-10-07 02:19:22 - INFO - [actualiza_db] - Data existente cargada desde db/db.parquet
+2025-10-07 02:19:22 - INFO - [actualiza_db] - Data Bitcoin obtenida correctamente
+2025-10-07 02:19:22 - INFO - [actualiza_db] - price_gold obtenido: 3948.5
+2025-10-07 02:19:37 - ERROR - [actualiza_db] - Error individual al obtener stock_index_dowjones: single positional indexer is out-of-bounds
+2025-10-07 02:19:37 - ERROR - [actualiza_db] - Error individual al obtener stock_index_sp500: single positional indexer is out-of-bounds
+2025-10-07 02:19:37 - ERROR - [actualiza_db] - Error individual al obtener rate_US10Y: single positional indexer is out-of-bounds
+2025-10-07 02:19:37 - ERROR - [actualiza_db] - Error individual al obtener stock_index_ni225: single positional indexer is out-of-bounds
+2025-10-07 02:19:37 - INFO - [actualiza_db] - Data combinada: {'date': datetime.date(2025, 10, 6), 'price': 124618.1259563874, 'total_volume': 66784176518.76617, 'market_cap': 2483442410945.6157, 'price_gold': np.float64(3948.5), 'stock_index_dowjones': None, 'stock_index_sp500': None, 'rate_US10Y': None, 'stock_index_ni225': None}
+2025-10-07 02:19:37 - INFO - [actualiza_db] - Data concatenada correctamente
+2025-10-07 02:19:37 - INFO - [actualiza_db] - Aplicando estrategia de forward fill
+2025-10-07 02:19:37 - INFO - [actualiza_db] - Data actualizada correctamente
+2025-10-07 02:19:37 - INFO - [actualiza_db] - Data persistida exitosamente en db/db.parquet
+2025-10-07 02:19:37 - INFO - [actualiza_db] - Pipeline completado exitosamente
+2025-10-07 02:19:37 - INFO - [actualiza_db] - No se encontraron logs para eliminar
