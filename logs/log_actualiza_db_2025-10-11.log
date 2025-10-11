@@ -1,0 +1,19 @@
+2025-10-11 02:16:11 - INFO - [actualiza_db] - Inicio del pipeline de actualización INTENTO --> 1
+2025-10-11 02:16:11 - INFO - [actualiza_db] - Data existente cargada desde db/db.parquet
+2025-10-11 02:16:11 - INFO - [actualiza_db] - Data Bitcoin obtenida correctamente
+2025-10-11 02:16:12 - INFO - [actualiza_db] - price_gold obtenido: 3946.300048828125
+2025-10-11 02:16:27 - INFO - [actualiza_db] - stock_index_dowjones obtenido: 46358.421875
+2025-10-11 02:16:43 - INFO - [actualiza_db] - stock_index_sp500 obtenido: 6735.10986328125
+2025-10-11 02:16:58 - INFO - [actualiza_db] - rate_US10Y obtenido: 4.1479997634887695
+2025-10-11 02:17:13 - INFO - [actualiza_db] - stock_index_ni225 obtenido: 48580.44140625
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Data combinada: {'date': datetime.date(2025, 10, 10), 'price': 112050.32242542294, 'total_volume': 167774327092.8786, 'market_cap': 2230626620069.5557, 'price_gold': np.float64(3946.300048828125), 'stock_index_dowjones': np.float64(46358.421875), 'stock_index_sp500': np.float64(6735.10986328125), 'rate_US10Y': np.float64(4.1479997634887695), 'stock_index_ni225': np.float64(48580.44140625)}
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Data concatenada correctamente
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Aplicando estrategia de forward fill
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Data actualizada correctamente
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Data persistida exitosamente en db/db.parquet
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Pipeline completado exitosamente
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-24.log (antigüedad: 17 días)
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-25.log (antigüedad: 16 días)
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-23.log (antigüedad: 18 días)
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-22.log (antigüedad: 19 días)
+2025-10-11 02:17:28 - INFO - [actualiza_db] - Total de logs eliminados: 4
