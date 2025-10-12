@@ -1,0 +1,16 @@
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Inicio del pipeline de actualización INTENTO --> 1
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Data existente cargada desde db/db.parquet
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Data Bitcoin obtenida correctamente
+2025-10-12 02:23:40 - WARNING - [actualiza_db] - Fin de semana detectado: retornando valores nulos
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Data combinada: {'date': datetime.date(2025, 10, 11), 'price': 110361.7970017019, 'total_volume': 95938395420.19618, 'market_cap': 2199538483524.267, 'price_gold': None, 'stock_index_dowjones': None, 'stock_index_sp500': None, 'rate_US10Y': None, 'stock_index_ni225': None}
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Data concatenada correctamente
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Aplicando estrategia de forward fill
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Data actualizada correctamente
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Data persistida exitosamente en db/db.parquet
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Pipeline completado exitosamente
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-24.log (antigüedad: 18 días)
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-25.log (antigüedad: 17 días)
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-26.log (antigüedad: 16 días)
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-23.log (antigüedad: 19 días)
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-22.log (antigüedad: 20 días)
+2025-10-12 02:23:40 - INFO - [actualiza_db] - Total de logs eliminados: 5
