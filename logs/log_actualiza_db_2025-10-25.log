@@ -1,0 +1,33 @@
+2025-10-25 02:22:33 - INFO - [actualiza_db] - Inicio del pipeline de actualización INTENTO --> 1
+2025-10-25 02:22:33 - INFO - [actualiza_db] - Data existente cargada desde db/db.parquet
+2025-10-25 02:22:33 - INFO - [actualiza_db] - Data Bitcoin obtenida correctamente
+2025-10-25 02:22:34 - INFO - [actualiza_db] - price_gold obtenido: 4125.5
+2025-10-25 02:22:49 - INFO - [actualiza_db] - stock_index_dowjones obtenido: 46734.609375
+2025-10-25 02:23:04 - INFO - [actualiza_db] - stock_index_sp500 obtenido: 6738.43994140625
+2025-10-25 02:23:19 - INFO - [actualiza_db] - rate_US10Y obtenido: 3.990999937057495
+2025-10-25 02:23:34 - INFO - [actualiza_db] - stock_index_ni225 obtenido: 48641.609375
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Data combinada: {'date': datetime.date(2025, 10, 24), 'price': 111022.18111258734, 'total_volume': 47225799875.24688, 'market_cap': 2213774106182.0186, 'price_gold': np.float64(4125.5), 'stock_index_dowjones': np.float64(46734.609375), 'stock_index_sp500': np.float64(6738.43994140625), 'rate_US10Y': np.float64(3.990999937057495), 'stock_index_ni225': np.float64(48641.609375)}
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Data concatenada correctamente
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Aplicando estrategia de forward fill
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Data actualizada correctamente
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Data persistida exitosamente en db/db.parquet
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Pipeline completado exitosamente
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-24.log (antigüedad: 31 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-08.log (antigüedad: 17 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-06.log (antigüedad: 19 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-25.log (antigüedad: 30 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-05.log (antigüedad: 20 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-30.log (antigüedad: 25 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-02.log (antigüedad: 23 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-29.log (antigüedad: 26 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-26.log (antigüedad: 29 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-03.log (antigüedad: 22 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-04.log (antigüedad: 21 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-09.log (antigüedad: 16 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-27.log (antigüedad: 28 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-23.log (antigüedad: 32 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-01.log (antigüedad: 24 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-22.log (antigüedad: 33 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-10-07.log (antigüedad: 18 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Log eliminado: log_actualiza_db_2025-09-28.log (antigüedad: 27 días)
+2025-10-25 02:23:49 - INFO - [actualiza_db] - Total de logs eliminados: 18
